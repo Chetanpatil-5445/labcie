@@ -2,7 +2,7 @@ import sys
 
 script_name = sys.argv[0]
 
-if len(sys.argv) >= 3:   # check if at least two arguments are provided
+if len(sys.argv) >= 3:   
     no1 = int(sys.argv[1])
     no2 = int(sys.argv[2])
 else:
