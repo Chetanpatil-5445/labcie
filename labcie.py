@@ -6,8 +6,8 @@ if len(sys.argv) == 3:
     no2 = int(sys.argv[2])
 else:
     script_name = sys.argv[0]
-    no1 = 0
-    no2 = 0
+    no1 = 4
+    no2 = 5
 
 sum_result = no1 + no2
 product = no1 * no2
