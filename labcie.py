@@ -7,7 +7,7 @@ if len(sys.argv) == 3:
 else:
     script_name = sys.argv[0]
     no1 = 4
-    no2 = 5
+    no2 = 9
 
 sum_result = no1 + no2
 product = no1 * no2
