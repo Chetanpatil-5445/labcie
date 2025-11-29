@@ -1,18 +1,32 @@
 import sys
 
-script_name = sys.argv[0]
+def main():
+    script_name = sys.argv[0]
 
-if len(sys.argv) >= 3:   
-    no1 = int(sys.argv[1])
-    no2 = int(sys.argv[2])
-else:
-    no1 = 4
-    no2 = 9
+    try:
+        # If at least 2 arguments are passed, use them
+        if len(sys.argv) >= 3:
+            no1 = int(sys.argv[1])
+            no2 = int(sys.argv[2])
+        else:
+            # Defaults if no arguments are given
+            no1 = 4
+            no2 = 9
+    except ValueError:
+        print("❌ Please enter valid integers as arguments.")
+        return
 
-sum_result = no1 + no2
-product = no1 * no2
-difference = no1 - no2
+    # Perform calculations
+    sum_result = no1 + no2
+    product = no1 * no2
+    difference = no1 - no2
 
-print(f"Sum = {sum_result}")
-print(f"Product = {product}")
-print(f"Difference = {difference}")
+    # Print results
+    print(f"Running script: {script_name}")
+    print(f"Input values: {no1}, {no2}")
+    print(f"Sum = {sum_result}")
+    print(f"Product = {product}")
+    print(f"Difference = {difference}")
+
+if __name__ == "__main__":
+    main()
