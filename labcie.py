@@ -10,8 +10,8 @@ def main():
             no2 = int(sys.argv[2])
         else:
             # Defaults if no arguments are given
-            no1 = 4
-            no2 = 9
+            no1 = any variables
+            no2 = any vaiables
     except ValueError:
         print("❌ Please enter valid integers as arguments.")
         return
