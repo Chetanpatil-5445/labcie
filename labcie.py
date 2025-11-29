@@ -1,11 +1,11 @@
 import sys
 
-if len(sys.argv) == 3:
-    script_name = sys.argv[0]
+script_name = sys.argv[0]
+
+if len(sys.argv) >= 3:   # check if at least two arguments are provided
     no1 = int(sys.argv[1])
     no2 = int(sys.argv[2])
 else:
-    script_name = sys.argv[0]
     no1 = 4
     no2 = 9
 
